@@ -27,6 +27,7 @@ library(stringr)
 #------------------------------------------------------------------------- Save and Modify the data -----------------------------------------------------------------------------
 
 chiData <- read.csv(file = "Energy_Usage_2010.csv", sep = ",", header = TRUE)
+cook <- blocks(state = "IL", county = "Cook County")
 
 colnames(chiData)[1] <- "Area"
 colnames(chiData)[21] <- "THERM.APRIL.2010"
